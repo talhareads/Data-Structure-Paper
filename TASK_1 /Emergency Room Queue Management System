@@ -32,7 +32,7 @@ public:
     
     void clearQueue() {
         while (front != nullptr) {
-            treatPatient();
+            DeleteFromBegining();
         }
     }
 
@@ -100,7 +100,7 @@ public:
         cout << "Patient " << patientId << " inserted at position " << position << "." << endl;
     }
 
-    void treatPatient() {
+    void DeleteFromBegining() {
         if (front == nullptr) {
             cout << "Queue is empty. No patients to treat." << endl;
             return;
@@ -182,6 +182,9 @@ public:
     }
 };
 
+/**
+ * Main function to demonstrate the ERQueue functionality
+ */
 int main() {
     ERQueue emergencyRoom;
 
@@ -198,10 +201,10 @@ int main() {
     emergencyRoom.InsertAtPosition(150, 2);    
     
     // Treat the first patient
-    emergencyRoom.treatPatient();              
+    emergencyRoom.DeleteFromBegining();              // One treated
     
     // Add another normal patient
-    emergencyRoom.InsertAtEnd(300);       
+    emergencyRoom.InsertAtEnd(300);       // Another patient shows up
 
     cout << "\nAfter operations:" << endl;
     emergencyRoom.displayQueue();
