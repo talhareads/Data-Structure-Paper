@@ -105,7 +105,7 @@ Head: 150
 
 Tail: 300
 ## 👨‍💻 **Author**
-**Name:** *Ishtiaq Ahmed*   
+**Name:** *Talha Rashid*   
 
 Forward Traversal: 150 → 101 → 102 → 300
 
@@ -135,3 +135,5 @@ Data Structure: Doubly Linked List
 
 This project successfully demonstrates how a Doubly Linked List can be used to manage real-world priority queues like hospital ER systems.
 It ensures that critical patients are treated first and the queue dynamically updates as patients are added or removed.
+## 👨‍💻 **Author**
+**Name:** *Talha Rashid* 
